@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  font-size: 28px;
+  color: #333;
+}
+
+h1 .highlight {
+  color: #28a745;
+}
+
+.subheading {
+  text-align: center;
+  margin-top: 10px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+h2 {
+  margin: 30px 0 15px;
+  font-size: 20px;
+  color: #333;
+  border-bottom: 2px solid #28a745;
+  padding-bottom: 5px;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.form-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-section label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.form-section input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.radio-group {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.signature-section {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.signature-block {
+  border-top: 1px solid #ccc;
+  padding-top: 10px;
+  text-align: center;
+  width: 40%;
+}
+
+.footer {
+  margin-top: 40px;
+  text-align: center;
+  color: #28a745;
+}
+
+.footer p {
+  color: #555;
+}
