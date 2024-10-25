@@ -1,0 +1,14 @@
+p{
+  background-color: aqua;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: larger;
+  background-image: -webkit-linear-gradient(5);
+  text-align: center;
+
+}
+.b{
+  margin: 0;
+  height: 100vh;
+  background-size: cover;
+  background-color:goldenrod; 
+}
