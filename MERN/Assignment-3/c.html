@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remove Items from Dropdown</title>
+    
+</head>
+<body>
+    <h2>Dropdown List</h2>
+    
+    <select id="myDropdown">
+        <option value="city">pune</option>
+        <option value="state">maharashtra</option>
+        <option value="country">india</option>
+        <option value="capital">mumbai</option>
+    </select>
+    
+    <button onclick="removeSelectedItem()">Remove Selected Item</button>
+    
+    <script>
+        function removeSelectedItem() {
+            const dropdown = document.getElementById("myDropdown");
+            dropdown.remove(dropdown.selectedIndex); 
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Highlight Bold Words</title>
+    <style>
+        #highlightLink {
+            color: blue;
+            cursor: pointer;
+            text-decoration: underline;
+        }
+
+        .bold-word {
+            font-weight: bold;
+        }
+
+        .highlight {
+            background-color: yellow; 
+        }
+    </style>
+</head>
+<body>
+    <h2>Paragraph Highlight Example</h2>
+    
+    <p id="highlightLink" onmouseover="highlightBoldWords()" onmouseout="removeHighlight()">On mouse over here bold words of the following paragraph will be highlighted</p>
+    
+    <p id="textParagraph">
+        <span class="bold-word">We</span>
+    have just
+         <span class="bold-word">started</span>
+      this section for the 
+          <span class="bold-word">users</span>
+    (beginner to intermediate) who want to 
+           <span class="bold-word">work</span>
+    with various JavaScript
+             <span class="bold-word">problems</span>
+     and write scripts online to test their JavaScript 
+        <span class="bold-word">skill</span>.
+    </p>
+
+    <script>
+        function highlightBoldWords() {
+            const boldWords = document.querySelectorAll(".bold-word");  
+            boldWords.forEach(word => {
+                word.classList.add("highlight"); 
+            });
+        }
+
+        function removeHighlight() {
+            const boldWords = document.querySelectorAll(".bold-word"); 
+            boldWords.forEach(word => {
+                word.classList.remove("highlight"); 
+            });
+        }
+    </script>
+</body>
+</html>
